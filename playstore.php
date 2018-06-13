@@ -204,7 +204,6 @@ class playstore{
         /**
         * @return array
         */
-
         return $result;
     }
 }

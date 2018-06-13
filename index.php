@@ -10,7 +10,7 @@ $push->keyword = ("a");
 $push->page = (1);
 // jumlah package_name per page = 15-30
 $push = $push->brute_force();
-
+$push = implode("\n", $push);
 
 if(file_put_contents('package_list.txt',$push) == true){
 	echo "success";
